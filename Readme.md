@@ -84,48 +84,38 @@ UPDATE agriculture SET Raingroup_Column = 'Medium' WHERE Rainfall BETWEEN 1201 A
 
 UPDATE agriculture SET Raingroup_Column = 'High'   WHERE Rainfall BETWEEN 2801 AND 4500;
 
-###**📊 Power BI Dashboards**
-All visuals are created using the transformed data from the agriculture table.
+### 📊 Power BI Dashboards
 
-1. 🌧 Rainfall Analysis
+All visuals are created using the transformed data from the `agriculture` table:
 
-2. 🌡 Temperature Analysis
+1. 🌧 **Rainfall Analysis**
+2. 🌡 **Temperature Analysis**
+3. 💧 **Humidity Analysis**
+4. 🌾 **Yield Analysis**
 
-3. 💧 Humidity Analysis
+---
 
-4. 🌾 Yield Analysis
+### 💡 Key Learnings
 
-###💡 Key Learnings
-End-to-end pipeline from S3 to Power BI
+- End-to-end pipeline from S3 to Power BI  
+- Snowflake role-based access and external stage setup  
+- SQL-based feature engineering using `ALTER`, `UPDATE`, and classification logic  
+- Interactive insights on agricultural metrics: Rainfall, Temperature, Humidity, Yield  
 
-Snowflake role-based access and external stage setup
+---
 
-SQL-based feature engineering using ALTER, UPDATE, and classification logic
+### 🧰 Tools Used
 
-Interactive insights on agricultural metrics: Rainfall, Temperature, Humidity, Yield
+| Tool      | Purpose                             |
+|-----------|-------------------------------------|
+| AWS S3    | Cloud storage for CSV data          |
+| Snowflake | Data warehousing and transformation |
+| Power BI  | Dashboards and analytics            |
+| SQL       | Data preprocessing and grouping     |
 
-###🧰 Tools Used
-Tool	Purpose
-AWS S3	Cloud storage for CSV data
-Snowflake	Data warehousing and transformation
-Power BI	Dashboards and analytics
-SQL	Data preprocessing and grouping
+---
 
-###📂 Project Files
-data_season.csv – Raw dataset
+### 📂 Project Files
 
-Agriculture_Analysis_PowerBi.pbix – Power BI Report
-
-Dashboard screenshots:
-
-Rainfall_analysis_ss.jpg
-
-Temperature_analysis_SS.jpg
-
-Humidity_analysis_SS.jpg
-
-Yield_analysis_ss.jpg
-
-###🙋‍♀️ Author
-Built with ❤️ by Ashwini Koppula
-
+- `data_season.csv` – Raw dataset  
+- `Agriculture_Analy_
