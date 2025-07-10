@@ -84,7 +84,7 @@ UPDATE agriculture SET Raingroup_Column = 'Medium' WHERE Rainfall BETWEEN 1201 A
 
 UPDATE agriculture SET Raingroup_Column = 'High'   WHERE Rainfall BETWEEN 2801 AND 4500;
 
-**📊 Power BI Dashboards**
+###**📊 Power BI Dashboards**
 All visuals are created using the transformed data from the agriculture table.
 
 1. 🌧 Rainfall Analysis
@@ -95,7 +95,7 @@ All visuals are created using the transformed data from the agriculture table.
 
 4. 🌾 Yield Analysis
 
-💡 Key Learnings
+###💡 Key Learnings
 End-to-end pipeline from S3 to Power BI
 
 Snowflake role-based access and external stage setup
@@ -104,14 +104,14 @@ SQL-based feature engineering using ALTER, UPDATE, and classification logic
 
 Interactive insights on agricultural metrics: Rainfall, Temperature, Humidity, Yield
 
-🧰 Tools Used
+###🧰 Tools Used
 Tool	Purpose
 AWS S3	Cloud storage for CSV data
 Snowflake	Data warehousing and transformation
 Power BI	Dashboards and analytics
 SQL	Data preprocessing and grouping
 
-📂 Project Files
+###📂 Project Files
 data_season.csv – Raw dataset
 
 Agriculture_Analysis_PowerBi.pbix – Power BI Report
@@ -126,6 +126,6 @@ Humidity_analysis_SS.jpg
 
 Yield_analysis_ss.jpg
 
-🙋‍♀️ Author
+###🙋‍♀️ Author
 Built with ❤️ by Ashwini Koppula
 
