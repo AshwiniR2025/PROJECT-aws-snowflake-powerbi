@@ -97,25 +97,37 @@ All visuals are created using the transformed data from the `agriculture` table:
 
 ### 💡 Key Learnings
 
-- End-to-end pipeline from S3 to Power BI  
-- Snowflake role-based access and external stage setup  
-- SQL-based feature engineering using `ALTER`, `UPDATE`, and classification logic  
-- Interactive insights on agricultural metrics: Rainfall, Temperature, Humidity, Yield  
+- 🚀 **End-to-end pipeline** from S3 to Power BI  
+- 🔐 **Snowflake role-based access** and external stage setup  
+- 🛠️ **SQL-based feature engineering** using `ALTER`, `UPDATE`, and logic classification  
+- 📈 **Insights on Rainfall, Temperature, Humidity, and Yield**
 
 ---
 
 ### 🧰 Tools Used
 
-| Tool      | Purpose                             |
-|-----------|-------------------------------------|
-| AWS S3    | Cloud storage for CSV data          |
-| Snowflake | Data warehousing and transformation |
-| Power BI  | Dashboards and analytics            |
-| SQL       | Data preprocessing and grouping     |
+| 🧪 Tool       | 🔍 Purpose                            |
+|--------------|----------------------------------------|
+| AWS S3        | Cloud storage for raw CSV files        |
+| Snowflake     | Scalable cloud data warehousing        |
+| Power BI      | Dashboarding and data visualization    |
+| SQL           | Data transformation and preparation    |
 
 ---
 
 ### 📂 Project Files
 
-- `data_season.csv` – Raw dataset  
-- `Agriculture_Analy_
+- 📁 `data_season.csv` – Raw dataset  
+- 📊 `Agriculture_Analysis_PowerBi.pbix` – Final Power BI Report  
+- 🖼️ Dashboard Screenshots:
+  - `Rainfall_analysis_ss.jpg`
+  - `Temperature_analysis_SS.jpg`
+  - `Humidity_analysis_SS.jpg`
+  - `Yield_analysis_ss.jpg`
+
+---
+
+### 🙋‍♀️ Author
+
+Built with ❤️ by **Ashwini Koppula**  
+[GitHub: AshwiniR2025](https://github.com/AshwiniR2025)
