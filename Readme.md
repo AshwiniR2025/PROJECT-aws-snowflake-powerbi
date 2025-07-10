@@ -57,7 +57,6 @@ This end-to-end project demonstrates how to upload and analyze agricultural data
 ## 🔄 Data Transformation in Snowflake
 
 ### 🧪 Create Working Table
-```sql
 CREATE TABLE agriculture AS SELECT * FROM pbi_dataset;
 
 
@@ -83,48 +82,53 @@ UPDATE agriculture SET Raingroup_Column = 'Low'    WHERE Rainfall BETWEEN 255 AN
 UPDATE agriculture SET Raingroup_Column = 'Medium' WHERE Rainfall BETWEEN 1201 AND 2800;
 
 UPDATE agriculture SET Raingroup_Column = 'High'   WHERE Rainfall BETWEEN 2801 AND 4500;
+### 📊 Power BI Dashboards
 
-> ## 📊 Power BI Dashboards
->
-> All visuals are created using the transformed data from the `agriculture` table:
->
-> 1. 🌧 **Rainfall Analysis**  
-> 2. 🌡 **Temperature Analysis**  
-> 3. 💧 **Humidity Analysis**  
-> 4. 🌾 **Yield Analysis**
+All visuals are created using the transformed data from the `agriculture` table:
 
----
-
-> ## 💡 Key Learnings
->
-> - 🚀 **End-to-end pipeline** from S3 to Power BI  
-> - 🔐 **Snowflake role-based access** and external stage setup  
-> - 🛠️ **SQL-based feature engineering** using `ALTER`, `UPDATE`, and logic classification  
-> - 📈 **Insights on Rainfall, Temperature, Humidity, and Yield**
+1. 🌧 **Rainfall Analysis**
+2. 🌡 **Temperature Analysis**
+3. 💧 **Humidity Analysis**
+4. 🌾 **Yield Analysis**
 
 ---
 
-> ## 🧰 Tools Used
->
-> | 🧪 Tool     | 🔍 Purpose                          |
-> |------------|-------------------------------------|
-> | AWS S3      | Cloud storage for raw CSV files     |
-> | Snowflake   | Scalable cloud data warehousing     |
-> | Power BI    | Dashboarding and data visualization |
-> | SQL         | Data transformation and preparation |
+### 💡 Key Learnings
+
+- 🚀 **End-to-end pipeline** from S3 to Power BI  
+- 🔐 **Snowflake role-based access** and external stage setup  
+- 🛠️ **SQL-based feature engineering** using `ALTER`, `UPDATE`, and logic classification  
+- 📈 **Insights on Rainfall, Temperature, Humidity, and Yield**
 
 ---
 
-> ## 📂 Project Files
->
-> - 📁 `data_season.csv` – Raw dataset  
-> - 📊 `Agriculture_Analysis_PowerBi.pbix` – Final Power BI Report  
-> - 🖼️ Dashboard Screenshots:
->   - `Rainfall_analysis_ss.jpg`  
->   - `Temperature_analysis_SS.jpg`  
->   - `Humidity_analysis_SS.jpg`  
->   - `Yield_analysis_ss.jpg`
+### 🧰 Tools Used
+
+| 🧪 Tool       | 🔍 Purpose                            |
+|--------------|----------------------------------------|
+| AWS S3        | Cloud storage for raw CSV files        |
+| Snowflake     | Scalable cloud data warehousing        |
+| Power BI      | Dashboarding and data visualization    |
+| SQL           | Data transformation and preparation    |
 
 ---
 
-> ## 🙋‍♀️ Author
+### 📂 Project Files
+
+- 📁 `data_season.csv` – Raw dataset  
+- 📊 `Agriculture_Analysis_PowerBi.pbix` – Final Power BI Report  
+- 🖼️ Dashboard Screenshots:
+  - `Rainfall_analysis_ss.jpg`
+  - `Temperature_analysis_SS.jpg`
+  - `Humidity_analysis_SS.jpg`
+  - `Yield_analysis_ss.jpg`
+
+---
+
+### 🙋‍♀️ Author
+
+Built with ❤️ by **Ashwini Koppula**  
+[GitHub: AshwiniR2025](https://github.com/AshwiniR2025)
+
+
+
