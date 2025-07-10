@@ -54,7 +54,8 @@ This end-to-end project demonstrates how to upload and analyze agricultural data
    FROM @pbi_stage1
    FILE_FORMAT = (TYPE = CSV FIELD_DELIMITER = ',' SKIP_HEADER = 1)
    ON_ERROR = 'continue';
-**🔄 Data Transformation in Snowflake
+--
+##**🔄 Data Transformation in Snowflake
 🧪 Create Working Table
 sql
 Copy
