@@ -83,7 +83,10 @@ CREATE TABLE agriculture AS SELECT * FROM pbi_dataset;
  UPDATE agriculture SET Raingroup_Column = 'Medium' WHERE Rainfall BETWEEN 1201 AND 2800;
 
  UPDATE agriculture SET Raingroup_Column = 'High'   WHERE Rainfall BETWEEN 2801 AND 4500;
-### 📊 Power BI Dashboards
+```
+
+
+## 📊 Power BI Dashboards
 
 All visuals are created using the transformed data from the `agriculture` table:
 
@@ -94,7 +97,7 @@ All visuals are created using the transformed data from the `agriculture` table:
 
 ---
 
-### 💡 Key Learnings
+## 💡 Key Learnings
 
 - 🚀 **End-to-end pipeline** from S3 to Power BI  
 - 🔐 **Snowflake role-based access** and external stage setup  
@@ -103,7 +106,7 @@ All visuals are created using the transformed data from the `agriculture` table:
 
 ---
 
-### 🧰 Tools Used
+## 🧰 Tools Used
 
 | 🧪 Tool       | 🔍 Purpose                            |
 |--------------|----------------------------------------|
@@ -114,7 +117,7 @@ All visuals are created using the transformed data from the `agriculture` table:
 
 ---
 
-### 📂 Project Files
+## 📂 Project Files
 
 - 📁 `data_season.csv` – Raw dataset  
 - 📊 `Agriculture_Analysis_PowerBi.pbix` – Final Power BI Report  
@@ -126,7 +129,7 @@ All visuals are created using the transformed data from the `agriculture` table:
 
 ---
 
-### 🙋‍♀️ Author
+## 🙋‍♀️ Author
 
 Built with ❤️ by **Ashwini Koppula**  
 [GitHub: AshwiniR2025](https://github.com/AshwiniR2025)
