@@ -61,27 +61,28 @@ CREATE TABLE agriculture AS SELECT * FROM pbi_dataset;
 
 
 **🔧 Perform Transformations**
-Update Columns
-UPDATE agriculture SET Rainfall = 1.1 * Rainfall;
-UPDATE agriculture SET Area = 0.9 * Area;
+ ```sql
+ Update Columns
+ UPDATE agriculture SET Rainfall = 1.1 * Rainfall;
+ UPDATE agriculture SET Area = 0.9 * Area;
 
-Add Year Groups
-ALTER TABLE agriculture ADD Year_Group STRING;
+ Add Year Groups
+ ALTER TABLE agriculture ADD Year_Group STRING;
 
-UPDATE agriculture SET Year_Group = 'Y1' WHERE Year BETWEEN 2004 AND 2009;
+ UPDATE agriculture SET Year_Group = 'Y1' WHERE Year BETWEEN 2004 AND 2009;
 
-UPDATE agriculture SET Year_Group = 'Y2' WHERE Year BETWEEN 2010 AND 2015;
+ UPDATE agriculture SET Year_Group = 'Y2' WHERE Year BETWEEN 2010 AND 2015;
 
-UPDATE agriculture SET Year_Group = 'Y3' WHERE Year BETWEEN 2016 AND 2019;
+ UPDATE agriculture SET Year_Group = 'Y3' WHERE Year BETWEEN 2016 AND 2019;
 
-Add Rainfall Group
-ALTER TABLE agriculture ADD Raingroup_Column STRING;
+ Add Rainfall Group
+ ALTER TABLE agriculture ADD Raingroup_Column STRING;
 
-UPDATE agriculture SET Raingroup_Column = 'Low'    WHERE Rainfall BETWEEN 255 AND 1200;
+ UPDATE agriculture SET Raingroup_Column = 'Low'    WHERE Rainfall BETWEEN 255 AND 1200;
 
-UPDATE agriculture SET Raingroup_Column = 'Medium' WHERE Rainfall BETWEEN 1201 AND 2800;
+ UPDATE agriculture SET Raingroup_Column = 'Medium' WHERE Rainfall BETWEEN 1201 AND 2800;
 
-UPDATE agriculture SET Raingroup_Column = 'High'   WHERE Rainfall BETWEEN 2801 AND 4500;
+ UPDATE agriculture SET Raingroup_Column = 'High'   WHERE Rainfall BETWEEN 2801 AND 4500;
 ### 📊 Power BI Dashboards
 
 All visuals are created using the transformed data from the `agriculture` table:
